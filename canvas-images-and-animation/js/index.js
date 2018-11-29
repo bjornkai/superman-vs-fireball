@@ -63,7 +63,6 @@ document.onkeydown = function(event){
             supermanY += 10;
             break;
     }
-
 }
 
 // ANIMATE THE CANVAS 
@@ -99,7 +98,6 @@ function drawingLoop(){
         // sets up a recursive loop (function calls itself multiple times)
         drawingLoop();
     });
-
 }
 
     function drawEverything(){
@@ -150,7 +148,6 @@ function gameOver(){
     ctx.fillStyle= "red";
     ctx.fillText("Game Over", 400, 225);
 }
-
 
 // call drawingLoop() to start looping (after this point it will recursively call itself)
 drawingLoop();
